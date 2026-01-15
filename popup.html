@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ticket Autofill Settings</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Autofill Settings</h2>
+
+    <div class="form-group">
+      <h3>Personal Info</h3>
+      <label>Last Name: <input type="text" id="lastName" placeholder="Wang"></label>
+      <label>First Name: <input type="text" id="firstName" placeholder="Da-Ming"></label>
+      <label>Phone: <input type="text" id="phone" placeholder="886912345678"></label>
+      <label>Email: <input type="text" id="email" placeholder="example@gmail.com"></label>
+    </div>
+
+    <div class="form-group">
+      <h3>Credit Card</h3>
+      <label>Number: <input type="text" id="ccNumber"></label>
+      <label>Holder: <input type="text" id="ccHolder"></label>
+      <div class="row">
+        <label>Exp Month: <input type="text" id="ccExpMonth" placeholder="05" maxlength="2"></label>
+        <label>Exp Year: <input type="text" id="ccExpYear" placeholder="2028" maxlength="4"></label>
+      </div>
+      <label>Security Code: <input type="text" id="ccSecurityCode" maxlength="4"></label>
+    </div>
+
+    <div class="form-group">
+      <h3>Other</h3>
+      <div class="row">
+        <label>Birth Month: <input type="text" id="birthMonth" placeholder="01" maxlength="2"></label>
+        <label>Birth Day: <input type="text" id="birthDay" placeholder="15" maxlength="2"></label>
+      </div>
+      <label>Passport Country: <input type="text" id="passport" placeholder="TW"></label>
+      <label>Residential Area: <input type="text" id="residential" placeholder="TW"></label>
+    </div>
+
+    <div class="actions">
+      <button id="saveBtn">Save Settings</button>
+      <button id="autofillBtn" class="primary">Autofill</button>
+    </div>
+    <div id="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
