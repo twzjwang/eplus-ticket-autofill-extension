@@ -5,6 +5,8 @@ https://eplus.tickets/en/sf/ibt/sports/baseball/wbc
 
 It helps users quickly fill in contact, payment, and personal information on the registration pages.
 
+![Demo Operation](record.gif)
+
 ## Features
 - **Secure Local Storage**: All user data is stored locally in your browser (`chrome.storage.local`). **No data is ever sent to external servers.**
 - **One-Click Autofill**: Fill complex forms instantly.
